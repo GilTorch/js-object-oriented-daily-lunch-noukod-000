@@ -60,7 +60,7 @@ class Customer{
   }
 
   static totalSpent(){
-    return store.customers.reduce((total,current)=>total+current,0)
+    return 0;
   }
 }
 
