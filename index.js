@@ -27,18 +27,17 @@ class Customer{
   constructor(name,neighborhoodId){
     this.name=name;
     this.id=++customerId;
+    this.neighborhoodId=neighborhoodId;
     store.customers.push(this);
-    if(neighborhoodId){
-      this.neighborhoodId=neighborhoodId;
-    }
   }
 }
 
 let deliveryId=0;
 class Delivery{
-  constructor(name){
+  constructor(name,mealId){
     this.name=name;
     this.id=++deliveryId;
+    this.mealId=mealId;
     store.deliveries.push(this);
   }
 }
