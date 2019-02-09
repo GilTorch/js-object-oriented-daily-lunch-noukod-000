@@ -60,7 +60,7 @@ class Customer{
   }
 
   totalSpent(){
-    return meals().map((meal)=>meal.price).reduce((acc,curr)=>{acc+curr},0)
+    return this.meals().map((meal)=>meal.price).reduce((acc,curr)=>{acc+curr},0)
   }
 }
 
