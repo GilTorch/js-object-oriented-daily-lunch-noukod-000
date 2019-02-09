@@ -23,10 +23,13 @@ class Neighborhood{
 
 let customerId=0;
 class Customer{
-  constructor(name){
+  constructor(name,neighborhoodId){
     this.name=name;
     this.id=++customerId;
     store.customers.push(this);
+    if(neighborhoodId){
+      this.neighborhoodId=neighborhoodId;
+    }
   }
 }
 
