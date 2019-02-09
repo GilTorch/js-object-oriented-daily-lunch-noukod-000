@@ -6,16 +6,16 @@ let neighborhoodId=0;
 let mealId=0;
 
 class Meal{
-  constructor(name){
-    this.name=name;
+  constructor(title){
+    this.title=title;
     this.id=++mealId;
     store.meals.push(this);
   }
 }
 
 class Neighborhood{
-  constructor(title){
-    this.title=title;
+  constructor(name){
+    this.name=name;
     this.id=++neighborhoodId;
     store.neighborhoods.push(this);
   }
@@ -35,7 +35,7 @@ class Customer{
 
 let deliveryId=0;
 class Delivery{
-  constructor(natitle
+  constructor(name){
     this.name=name;
     this.id=++deliveryId;
     store.deliveries.push(this);
