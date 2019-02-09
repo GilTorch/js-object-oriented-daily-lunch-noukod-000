@@ -44,11 +44,6 @@ class Neighborhood{
 
 let customerId=0;
 class Customer{
-
-  static totalSpent(){
-    return 0;
-  }
-
   constructor(name,neighborhoodId){
     this.name=name;
     this.id=++customerId;
@@ -64,6 +59,9 @@ class Customer{
     return this.deliveries().map(((delivery)=>delivery.meal()));
   }
 
+  totalSpent(){
+    return 0;
+  }
 }
 
 let deliveryId=0;
