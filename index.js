@@ -42,7 +42,7 @@ class Neighborhood{
   }
 
   meals(){
-    return this.deliveries().map((delivery)=>delivery.meal()).filter((value,index,self)=>self.indexOf(value)===index);
+    return this.deliveries().map((delivery)=>delivery.meal()).filter((value,index,thisArr)=>thisArr.indexOf(value)===index);
   }
 }
 
