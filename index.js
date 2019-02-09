@@ -20,6 +20,10 @@ class Neighborhood{
     this.id=++neighborhoodId;
     store.neighborhoods.push(this);
   }
+
+  deliveries(){
+    return store.deliveries.filter((delivery)=>delivery.neighborhoodId===this.id);
+  }
 }
 
 let customerId=0;
