@@ -59,9 +59,6 @@ class Customer{
     return this.deliveries().map(((delivery)=>delivery.meal()));
   }
 
-  static totalSpent(){
-    return 0;
-  }
 }
 
 let deliveryId=0;
