@@ -22,7 +22,7 @@ class Meal{
   }
 
   static byPrice(){
-    return store.meals
+    return store.meals.sort();
   }
 }
 
