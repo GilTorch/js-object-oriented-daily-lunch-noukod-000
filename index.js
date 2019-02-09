@@ -30,6 +30,7 @@ class Customer{
   }
 }
 
+let deliveryId=0;
 class Delivery{
   constructor(name){
     this.name=name;
