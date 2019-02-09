@@ -20,6 +20,10 @@ class Meal{
   customers(){
     return this.deliveries().map((delivery)=>delivery.customer());
   }
+
+  static byPrice(){
+    return store.meals().sort((a,b)=>b-a);
+  }
 }
 
 class Neighborhood{
