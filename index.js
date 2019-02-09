@@ -58,6 +58,10 @@ class Customer{
   meals(){
     return this.deliveries().map(((delivery)=>delivery.meal()));
   }
+
+  static totalSpent(){
+    return store.customers.reduce((total,current)=>total+current,0)
+  }
 }
 
 let deliveryId=0;
