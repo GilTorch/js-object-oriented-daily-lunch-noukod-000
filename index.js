@@ -55,6 +55,6 @@ class Delivery{
   }
 
   customer(){
-    return store.customers.find((customer)=>meal.id===this.customerId);
+    return store.customers.find((customer)=>customer.id===this.customerId);
   }
 }
