@@ -34,10 +34,11 @@ class Customer{
 
 let deliveryId=0;
 class Delivery{
-  constructor(name,mealId){
+  constructor(name,mealId,customerId){
     this.name=name;
     this.id=++deliveryId;
     this.mealId=mealId;
+    this.customerId=customerId;
     store.deliveries.push(this);
   }
 }
