@@ -49,4 +49,8 @@ class Delivery{
     this.id=++deliveryId;
     store.deliveries.push(this);
   }
+
+  meal(){
+    return store.meals.find((meal)=>meal.id===this.mealId);
+  }
 }
