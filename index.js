@@ -7,7 +7,7 @@ let mealId=0;
 
 class Meal{
   constructor(name){
-    this.name=name; 
+    this.name=name;
     this.id=++mealId;
     store.meals.push(this);
   }
