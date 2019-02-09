@@ -48,7 +48,7 @@ class Customer{
   static totalSpent(){
     return 0;
   }
-  
+
   constructor(name,neighborhoodId){
     this.name=name;
     this.id=++customerId;
