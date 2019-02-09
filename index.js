@@ -6,11 +6,10 @@ let neighborhoodId=0;
 let mealId=0;
 
 class Meal{
-  constructor(title,price,customerId){
+  constructor(title,price){
     this.title=title;
     this.id=++mealId;
-    tis.price=price;
-    this.customerId=customerId;
+    this.price=price;
     store.meals.push(this);
   }
 }
