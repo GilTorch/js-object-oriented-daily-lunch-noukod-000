@@ -22,7 +22,7 @@ class Meal{
   }
 
   static byPrice(){
-    return store.meals.sort();
+    return store.meals.sort((a,b)=>a-b);
   }
 }
 
