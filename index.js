@@ -29,3 +29,11 @@ class Customer{
     store.customers.push(this);
   }
 }
+
+class Delivery{
+  constructor(name){
+    this.name=name;
+    this.id=++deliveryId;
+    store.deliveries.push(this);
+  }
+}
